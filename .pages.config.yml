@@ -1,0 +1,18 @@
+site_name: whzhengwei
+backend:
+  repo: zwmac/hugo-site
+  branch: main
+media:
+  folder: static/images
+content:
+  - name: posts
+    label: Blog Posts
+    type: collection
+    path: content/posts
+    fields:
+      - name: title
+        type: string
+      - name: date
+        type: datetime
+      - name: body
+        type: rich-text
